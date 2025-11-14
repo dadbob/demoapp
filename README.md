@@ -131,7 +131,7 @@ php artisan key:generate
 
 ---
 
-## 🗄 Database Configuration (SQLite Recommended)
+## 🗄 Database Configuration (SQLite - For Simple Demo Only)
 
 ```bash
 mkdir -p database
