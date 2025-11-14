@@ -179,6 +179,11 @@ app/
 └── Providers/
     └── AppServiceProvider.php     # Custom Blade directives
 
+app/
+└── Http/
+    └── Controllers/
+        └── DemoController.php     # Demostration Controller
+
 routes/
 └── web.php                        # Demo routes
 
