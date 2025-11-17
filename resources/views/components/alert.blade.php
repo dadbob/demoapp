@@ -53,6 +53,19 @@
       the component tags:
         <x-alert>THIS IS THE SLOT</x-alert>
       => $slot = "THIS IS THE SLOT"
+
+    Named slots
+    -----------
+    - Blade also supports named slots for components that have more than
+      one content area, e.g. a "footer" slot in a card component:
+          <x-card title="Example">
+              Main body goes into $slot.
+              <x-slot name="footer">
+                  Footer content goes into $footer.
+              </x-slot>
+          </x-card>
+    - This <x-alert> component does NOT define any named slots; all content
+      is rendered through the default $slot only.
 --}}
 <div {{ $attributes->merge(['class' => 'alert '.($classes[$type] ?? 'alert-info')]) }}>
     {{--
